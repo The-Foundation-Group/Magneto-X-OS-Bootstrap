@@ -1,0 +1,11 @@
+[Uint]
+Description=Magneto Manager Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/bin/bash /home/pi/Peopoly\ Utilities/auto-uuid/magneto-run.sh
+
+[Install]
+WantedBy=multi-user.target

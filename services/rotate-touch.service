@@ -1,0 +1,14 @@
+[Unit]
+Description=rotate-touch
+After=display-manager.service
+
+[Service]
+Type=simple
+Environment="DISPLAY=:0"
+ExecStart=/home/pi/Peopoly\ Utilities/rotate-touch.sh
+Restart=no
+User=root
+
+
+[Install]
+WantedBy=graphical.target
